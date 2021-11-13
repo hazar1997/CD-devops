@@ -40,6 +40,17 @@ pipeline {
 }
 }
 }
+stage('docker_registry') {
+steps{
+script {
+
+
+sh "ansible-playbook ansible/docker-registry.yml -i ansible/inventory/host.yml "
+
+
+}
+}
+}
 
 }
 }
