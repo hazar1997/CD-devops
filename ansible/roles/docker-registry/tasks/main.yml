@@ -1,8 +1,15 @@
 ---
 # tasks file for docker-registry
-- name: Tag and push to docker hub
-  docker_image:
-    name: haifa54/myapp:angularCD
-    repository: haifa54/myapp
-    tag: angularCD
-    push: yes
+- name: Log into DockerHub
+  docker_login:
+    username: haifa54
+    password: Besthaf123456haha
+    email: haifa.ghabri@esprit.tn
+- name: Push to docker hub
+  ansible.builtin.shell: docker push haifa54/myapp
+#
+#- name: Push to docker hub
+#  docker_image:
+#    name: "haifa54/myapp"
+#    repository: haifa54/myapp
+#    push: yes
