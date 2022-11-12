@@ -14,11 +14,11 @@ pipeline {
    	stage('Install') {
              steps{
                 script{
-                    sh "sudo npm install"
+                    sh "sudo npm "
                 }
             }
         }
-##
+
 	stage ('Build') {
 	
 			steps {
@@ -29,6 +29,7 @@ pipeline {
 
 
 	}
+
 	stage('docker') {
 		steps{
 			script {
