@@ -7,7 +7,7 @@ pipeline {
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
                             credentialsId: '42835aef-c5fe-4a1d-98cf-9492d71e1298',
-                            url: 'https://github.com/hazar1997/CD-devops.git']]])
+                            url: 'https://github.com/hazar1997/D-devops.git']]])
                 }
             }
         }
@@ -29,7 +29,7 @@ stage ('Build') {
 
 	}
 
-}
+
 
 	
 
