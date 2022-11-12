@@ -3,20 +3,14 @@
 # tasks file for docker-registry
 - name: Log into DockerHub
   docker_login:
-    username: haifa54
-    password: Besthaf123456haha
+    username: hazar123
+    password: 204JMT1713
 
 - name: Tag and push to docker hub
   docker_image:
     name: angular:latest
-    repository: haifa54/myapp
+    repository: hazar123/devops
     tag: end
     push: yes
 
-#
-#- name: Push to docker hub
-#  docker_image:
-#    name: "haifa54/myapp"
-#    repository: haifa54/myapp
-#    push: yes
 
